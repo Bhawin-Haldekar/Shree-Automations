@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Automations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    html{scroll-behavior:smooth}
+    body{background:#ffffff;color:#111}
+
+    header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:10;animation:slideDown .8s ease}
+    .container{max-width:1200px;margin:auto;padding:20px}
+    nav{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-size:26px;font-weight:700;color:#000}
+    .logo span{color:#8b8b2e}
+    nav a{margin-left:20px;text-decoration:none;color:#111;font-weight:500}
+
+    .hero{padding:90px 20px;animation:fadeUp 1s ease}
+    .hero h1{font-size:48px;font-weight:700}
+    .hero h1 span{color:#8b8b2e}
+    .hero p{margin-top:15px;font-size:18px;color:#444;max-width:650px}
+    .btn{display:inline-block;margin-top:30px;padding:14px 28px;background:#000;color:#fff;text-decoration:none;border-radius:8px;font-weight:500;transition:.3s}
+    .btn:hover{transform:scale(1.05)}
+
+    section{padding:70px 20px}
+    .section-title{text-align:center;font-size:34px;margin-bottom:40px}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+    .card{border:1px solid #eee;border-radius:14px;padding:30px;text-align:center;transition:.4s;animation:fadeUp 1s ease}
+    .card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+
+    .pricing{background:#fafafa}
+    .price{font-size:36px;font-weight:700;margin:15px 0}
+
+    .contact{background:#000;color:#fff;text-align:center}
+    .contact p{margin:15px auto;max-width:650px;color:#ccc}
+
+    input,select,textarea{padding:14px;border-radius:8px;border:none;transition:.3s}
+    input:focus,select:focus,textarea:focus{outline:none;transform:scale(1.02)}
+
+    footer{text-align:center;padding:20px;font-size:14px;color:#666}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Shree <span>Automations</span></div>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <h1>Automate. <span>Grow.</span> Dominate.</h1>
+  <p>We help local businesses, creators, and brands grow using AI-powered automations, content systems, and lead generation workflows.</p>
+  <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<section id="services" class="container">
+  <h2 class="section-title">Our Services</h2>
+  <div class="cards">
+    <div class="card"><h3>AI Automation</h3><p>WhatsApp, CRM, lead capture & auto-replies</p></div>
+    <div class="card"><h3>Content Creation</h3><p>Reels, posts & branded content systems</p></div>
+    <div class="card"><h3>Lead Generation</h3><p>Funnels, landing pages & DM automation</p></div>
+    <div class="card"><h3>Business Growth</h3><p>Monthly growth plans & analytics</p></div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Why Shree Automations?</h2>
+  <div class="cards">
+    <div class="card">🚀 Automation-first systems</div>
+    <div class="card">⚡ Setup in 3–7 days</div>
+    <div class="card">📊 Data-driven decisions</div>
+    <div class="card">💼 Built for local & online brands</div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Trusted by Businesses</h2>
+  <div class="cards">
+    <div class="card">“Saved 10+ hours weekly using automation.”<br><strong>– Cafe Owner</strong></div>
+    <div class="card">“Leads doubled in just one week.”<br><strong>– Coaching Institute</strong></div>
+    <div class="card">“Very professional and reliable.”<br><strong>– Service Business</strong></div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2 class="section-title">Simple Pricing</h2>
+    <div class="cards">
+      <div class="card"><h3>Starter</h3><div class="price">₹4,999</div><p>Content + Basic automation</p></div>
+      <div class="card"><h3>Growth</h3><div class="price">₹9,999</div><p>Automation + Leads + Content</p></div>
+      <div class="card"><h3>Pro</h3><div class="price">₹19,999</div><p>Full AI systems & scaling</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Let’s Build Your System</h2>
+  <p>Fill the enquiry form and we’ll contact you within 24 hours.</p>
+
+  <form class="container" style="max-width:700px;margin-top:40px;text-align:left" id="enquiryForm">
+    <div style="display:grid;gap:18px">
+      <input name="name" placeholder="Full Name" required />
+      <input name="phone" placeholder="Contact Number" required />
+      <input name="email" type="email" placeholder="Email Address" required />
+      <input name="business" placeholder="Business Name" required />
+      <input name="address" placeholder="Business Address / City" />
+      <select name="type" required>
+        <option value="">Select Business Type</option>
+        <option>Cafe / Restaurant</option>
+        <option>Gym / Fitness</option>
+        <option>Coaching / Education</option>
+        <option>Product Brand</option>
+        <option>Service Business</option>
+        <option>Other</option>
+      </select>
+      <select name="package" required>
+        <option value="">Select Package</option>
+        <option>Starter – ₹4,999</option>
+        <option>Growth – ₹9,999</option>
+        <option>Pro – ₹19,999</option>
+      </select>
+      <textarea name="description" rows="4" placeholder="Describe your business & automation needs" required></textarea>
+      <button type="submit" class="btn" style="border:none;cursor:pointer">Submit Enquiry</button>
+    </div>
+  </form>
+</section>
+
+<footer>© 2026 Shree Automations. All rights reserved.</footer>
+
+<script>
+  const form = document.getElementById('enquiryForm');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    fetch('https://script.google.com/macros/s/AKfycbwwziJ80ZymCAPu2s25aFsVgbm7R_V66EQ0GPVhkrvFQojk9Icu3BGdnw9uzJ6IexdHEg/exec', {
+      method: 'POST',
+      body: data
+    }).then(() => {
+      form.innerHTML = `
+        <div style="text-align:center;animation:fadeUp 0.8s ease">
+          <h2 style="color:#8b8b2e">Thank You! 🎉</h2>
+          <p style="margin-top:10px;color:#ccc">Your enquiry has been received.<br>We’ll contact you shortly.</p>
+        </div>`;
+    }).catch(() => alert('Submission failed'));
+  });
+</script>
+
+</body>
+</html>
